@@ -1,2 +1,2 @@
 # ml-debian-python
-Base container for machine learning projects.
+Base debian containers for machine learning projects.
