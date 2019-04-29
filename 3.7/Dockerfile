@@ -20,8 +20,6 @@ RUN cd /usr/src \
 && ./configure --enable-optimizations \
 && make altinstall
 
-RUN pip3 install --upgrade pip setuptools wheel
-
 RUN ln -s /usr/local/bin/python3.7 /usr/local/bin/python3 \
 && ln -s /usr/local/bin/pip3.7 /usr/local/bin/pip3 \
 && ln -s /usr/local/bin/python3.7 /usr/local/bin/python \
@@ -30,6 +28,8 @@ RUN ln -s /usr/local/bin/python3.7 /usr/local/bin/python3 \
 && ln -s /usr/local/bin/python3.7m-config /usr/local/bin/python3-config \
 && ln -s /usr/local/bin/pydoc3.7 /usr/local/bin/pydoc \
 && ln -s /usr/local/bin/python3.7m-config /usr/local/bin/python-config
+
+RUN pip3 install --upgrade pip setuptools wheel
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
