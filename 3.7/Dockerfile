@@ -5,9 +5,9 @@ ENV PATH /usr/local/bin:$PATH
 
 ENV LANG C.UTF-8
 
-ENV PYTHON_VERSION 3.7.3
+ENV PYTHON_VERSION 3.7.6
 
-ENV PYTHON_PIP_VERSION 19.0.3
+ENV PYTHON_PIP_VERSION 20.0.2
 
 RUN apt-get update \
 && apt-get install build-essential checkinstall cmake git libreadline-gplv2-dev libncursesw5-dev libssl-dev \
