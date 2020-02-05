@@ -10,7 +10,7 @@ ENV PYTHON_VERSION 3.7.6
 ENV PYTHON_PIP_VERSION 20.0.2
 
 RUN apt-get update \
-&& apt-get install build-essential checkinstall cmake git libreadline-gplv2-dev libncursesw5-dev libssl-dev \
+&& apt-get install build-essential cmake git libreadline-gplv2-dev libncursesw5-dev libssl-dev \
     libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev libprotobuf-dev libprotoc-dev protobuf-compiler wget -y
 
 RUN cd /usr/src \
